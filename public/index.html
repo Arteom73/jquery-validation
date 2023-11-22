@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Test</title>
+    <meta name=viewport content="width=device-width">
+    <link rel="stylesheet" href="assets/stylesheets/light.css" />
+</head>
+<body>
+    <div class="container">
+        <script>
+            window.validationMessages = {
+                required: 'Fill the field!',
+                phone: 'Invalid phone number!',
+            }
+        </script>
+        <form action="#" method="post" class="form" data-plugin="form">
+            <div class="form__group">
+                <div class="form__input">
+                    <input type="text" name="name" placeholder="Name" required>
+                </div>
+                <div class="form__input">
+                    <input type="tel" name="phone" data-rule="phone" placeholder="+7(999) 999 99-99" required>
+                </div>
+                <div class="form__input">
+                    <input type="tel" name="second-phone" data-rule="phone" placeholder="+7(999) 999 99-99" required>
+                </div>
+                <div class="form__submit">
+                    <button type="submit">Send</button>
+                </div>
+            </div>
+            <div class="form__success">
+                <div class="form__success-icon">
+                    <svg style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512">
+                        <polygon fill="#41AD49" points="434.8,49 174.2,309.7 76.8,212.3 0,289.2 174.1,463.3 196.6,440.9 196.6,440.9 511.7,125.8 434.8,49"/>
+                    </svg>
+                </div>
+                <div class="form__success-text">
+                    Thank you!
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="assets/javascripts/main.js"></script>
+</body>
+</html>
